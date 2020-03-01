@@ -1,0 +1,44 @@
+Namespace(batch_size=32, decay_rate=0.7, decay_step=200000, gpu=0, learning_rate=0.001, log_dir='log', max_epoch=2, model='pointnet_cls', momentum=0.9, num_point=1024, optimizer='adam')
+**** EPOCH 000 ****
+----0-----
+mean loss: 3.777025
+accuracy: 0.198242
+----1-----
+mean loss: 2.693904
+accuracy: 0.315918
+----2-----
+mean loss: 2.419799
+accuracy: 0.362305
+----3-----
+mean loss: 2.107681
+accuracy: 0.442402
+----4-----
+mean loss: 1.978303
+accuracy: 0.465332
+----0-----
+----1-----
+eval mean loss: 2.533253
+eval accuracy: 0.353896
+eval avg class acc: 0.277546
+Model saved in file: log/model.ckpt
+**** EPOCH 001 ****
+----0-----
+mean loss: 1.875469
+accuracy: 0.481445
+----1-----
+mean loss: 1.647268
+accuracy: 0.525879
+----2-----
+mean loss: 1.633899
+accuracy: 0.534180
+----3-----
+mean loss: 1.524111
+accuracy: 0.552696
+----4-----
+mean loss: 1.422296
+accuracy: 0.590332
+----0-----
+----1-----
+eval mean loss: 1.148210
+eval accuracy: 0.650162
+eval avg class acc: 0.529091
