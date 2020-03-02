@@ -102,7 +102,6 @@ def train():
             batch = tf.Variable(0)
             bn_decay = get_bn_decay(batch)
             tf.summary.scalar('bn_decay', bn_decay)
-
             # Get model and loss 
             pred, end_points = MODEL.get_model(pointclouds_pl, is_training_pl, bn_decay=bn_decay)
             loss = MODEL.get_loss(pred, labels_pl, end_points)

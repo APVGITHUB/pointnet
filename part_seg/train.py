@@ -1,3 +1,4 @@
+import silence_tensorflow
 import argparse
 import subprocess
 import tensorflow as tf
@@ -11,7 +12,6 @@ sys.path.append(BASE_DIR)
 sys.path.append(os.path.dirname(BASE_DIR))
 import provider
 import pointnet_part_seg as model
-
 # DEFAULT SETTINGS
 parser = argparse.ArgumentParser()
 parser.add_argument('--gpu', type=int, default=1, help='GPU to use [default: GPU 0]')
